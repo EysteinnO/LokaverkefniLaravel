@@ -11,13 +11,18 @@ class HomeController extends Controller
     	return view('index');
     }
 
-    public function ships()
+    public function flights()
     {
-    	return view ('ships');
+    	return view ('flights');
     }
 
-    public function shipsdata()
+    public function arrivals()
     {
-    	return view ('shipsdata');
+    	return view ('arrivals');
+    }
+
+    public function departures()
+    {
+        return view ('departures');
     }
 }

@@ -25,4 +25,26 @@ class HomeController extends Controller
     {
         return view ('departures');
     }
+
+    public function about()
+    {
+        return view ('about');
+    }
+
+    public function contact()
+    {
+        return view ('contact');
+    }
+
+    public function carpool()
+    {
+        return view ('Carpool.carpool');
+    }
+
+    public function gas()
+    {
+        return view ('GasStations.gas');
+    }
+
+   
 }

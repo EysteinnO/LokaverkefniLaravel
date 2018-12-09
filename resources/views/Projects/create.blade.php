@@ -1,25 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<h1> Create a new project </h1>
-
-	<form method="post" action="/projects">
-		{{ csrf_field() }}
+@extends('layout')
+@section('content')
+<h1> Create a new blog </h1>
+<form method="post" action="/projects">
+	{{ csrf_field() }} <!--Validation-->
+	<div class="form-group">
 		<div>
-
-			<input type="text" name="title" placeholder="Project title">
-
-
+			<label for="post">Title:</label>
+			<input type="text" class="form-control" value="{{ $project->title}}" required>
 		</div>
-
-		<div>
-			<textarea name="description" placeholder="Description"> </textarea>
-		</div>
-		<button type="submit"> Create project </button>
-	</form>
-
-</body>
-</html>
+		
+		<label for="post">Post:</label>
+		<textarea class="form-control" rows="5" id="comment" value="{{ $project->description}}"required></textarea>
+		
+	</div>
+	<button type="submit" class="btn btn-primary btn-lg">Post</button>
+</form>
+@endsection

@@ -15,7 +15,7 @@ class ProjectsController extends Controller
     	//return $projects;
     	return view ('Projects.index', compact('projects'));
     }
-
+    //Method takes in model and inserts into $project
     public function show(Projects $project)
     {    	
 
@@ -54,4 +54,20 @@ class ProjectsController extends Controller
     	
     	return redirect('/projects');
     }
+
+    public function calendar()
+    {
+        $projects = Projects::all();
+        return view ('Projects.calendar', compact('projects'));
+    }
+
+    public function blog()
+    {
+        $projects = Projects::all();
+
+        //return $projects;
+        return view ('Projects.blog', compact('projects'));
+    }
+
+    
 }

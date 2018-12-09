@@ -20,7 +20,7 @@
 	<button class="button" type="submit">Update</button>
 </form>
 
-<form method="post" action="/projects/{{ $project->id}}">
+<form method="post" action="/projects/{{$project->id}}">
 	@csrf
 	@method('DELETE')
 	<div class="field">

@@ -22,11 +22,17 @@ PATCH /Projects/1 (update)
 DELETE /Projects/1 (destroy) 
 */
 
-
-Route::get('/index', 'HomeController@index');
 Route::get('/flights', 'HomeController@flights');
 Route::get('/arrivals', 'HomeController@arrivals');
 Route::get('/departures', 'HomeController@departures');
-//Projects 
+Route::get('/carpool', 'HomeController@carpool');
+Route::get('/gas', 'HomeController@gas');
+Route::get('/about', 'HomeController@about');
+Route::get('/contact', 'HomeController@contact');
+
+//Projects - CRUD
+Route::get('/blog', 'ProjectsController@blog');
 Route::resource('projects', 'ProjectsController');
+Route::get('/index', 'ProjectsController@index');
+Route::get('/calendar', 'ProjectsController@calendar');
 

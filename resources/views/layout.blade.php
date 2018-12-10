@@ -1,3 +1,5 @@
+<!--Layout síða fyrir restina af allri síðunni, þessu er varpað sem grunn html fæll fyrir restina af viewunum, -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>

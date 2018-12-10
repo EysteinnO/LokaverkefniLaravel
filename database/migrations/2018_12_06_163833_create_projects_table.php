@@ -13,6 +13,7 @@ class CreateProjectsTable extends Migration
      */
     public function up()
     {
+        //Migration fyrir projects töfluna
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');            
             $table->string('title');

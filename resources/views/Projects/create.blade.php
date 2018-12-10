@@ -6,11 +6,11 @@
 	<div class="form-group">
 		<div>
 			<label for="post">Title:</label>
-			<input type="text" class="form-control" value="{{ $project->title}}" required>
+			<input type="text" name="title" class="form-control" value="" required>
 		</div>
 		
 		<label for="post">Post:</label>
-		<textarea class="form-control" rows="5" id="comment" value="{{ $project->description}}"required></textarea>
+		<textarea name="description" class="form-control" rows="5" id="comment" value=""required></textarea>
 		
 	</div>
 	<button type="submit" class="btn btn-primary btn-lg">Post</button>

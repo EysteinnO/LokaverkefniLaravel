@@ -22,7 +22,7 @@ class ProjectsController extends Controller
     	return view ('Projects.show', compact('project'));
     }
 
-    public function create()
+    public function create(Projects $project)
     {
     	return view ('Projects.create');
     }

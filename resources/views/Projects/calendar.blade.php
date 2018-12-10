@@ -38,7 +38,7 @@
 
       events: [
         {
-          title: '{{$project->title[0]}}',
+          title: '{{$project->title}}',
           url: '{{$project->id}}',
           start: '{{$project->created_at}}',
           end: '{{$project->updated_at}}'

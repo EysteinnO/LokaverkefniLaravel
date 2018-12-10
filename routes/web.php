@@ -31,8 +31,8 @@ Route::get('/about', 'HomeController@about');
 Route::get('/contact', 'HomeController@contact');
 
 //Projects - CRUD
-Route::get('/blog', 'ProjectsController@blog');
 Route::resource('projects', 'ProjectsController');
+Route::get('/blog', 'ProjectsController@blog');
 Route::get('/index', 'ProjectsController@index');
 Route::get('/calendar', 'ProjectsController@calendar');
 

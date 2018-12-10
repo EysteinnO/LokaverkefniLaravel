@@ -24,7 +24,7 @@
 							<a class="nav-link" href="/about">About this site</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/schedule">Add to your schedule</a>
+							<a class="nav-link" href="/projects/create">Add a blog post</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/calendar">Your calendar</a>
@@ -32,17 +32,12 @@
 						<li class="nav-item">
 							<a class="nav-link" href="/contact">Contact us!</a>
 						</li>
-						
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Blog
-							</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-								<a class="dropdown-item" href="/projects/1">Blog Home 1</a>
-								<a class="dropdown-item" href="/projects/2">Blog Home 2</a>
-								<a class="dropdown-item" href="/projects/3">Blog Post</a>
-							</div>
+
+						<li class="nav-item">
+							<a class="nav-link" href="/blog">Contact us!</a>
 						</li>
+						
+						
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Other Pages

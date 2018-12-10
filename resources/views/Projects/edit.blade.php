@@ -3,7 +3,7 @@
 <h1 class="title"> Edit Project </h1>
 <form method="POST" action="/projects/{{ $project->id}}">
 	@csrf
-	@method('PATCH')
+	@method('PATCH') <!--Fake patch request.-->
 	<div class="field">
 		<label class="label" for="title">Title</label>
 		<div class="control">
